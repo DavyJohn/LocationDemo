@@ -43,7 +43,6 @@ public class LocationListenerService extends IntentService implements LocationLi
         criteria.setCostAllowed(true);//允许有花费
         criteria.setPowerRequirement(Criteria.POWER_LOW);//低功耗
 
-
         String provider = locationManager.getBestProvider(criteria, true);
         System.out.print(provider);
 
